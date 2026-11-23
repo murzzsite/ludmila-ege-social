@@ -99,6 +99,7 @@ const TG_LINK = 'https://t.me/Lydmilagoro';
     ];
     const n = $('#gN'), t = $('#gT'), p = $('#gP'), box = $('.gr__panel');
     $$('[data-g]').forEach(b => b.addEventListener('click', () => {
+      $$('[data-g]').forEach(o => o.setAttribute('aria-selected', o === b));
       const i = +b.dataset.g;
       n.textContent = '0' + (i + 1); t.textContent = D[i][0]; p.textContent = D[i][1];
       box.classList.remove('sw'); void box.offsetWidth; box.classList.add('sw');

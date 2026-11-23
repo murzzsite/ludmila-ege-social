@@ -91,7 +91,7 @@ p{margin:0}
 .gr{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(20px,4vw,56px);align-items:start}
 .gr__tabs{display:grid;gap:4px;justify-items:start}
 .gr__tabs button{font:600 17px/1.2 var(--ff-t);padding:14px 22px;border:0;background:transparent;color:var(--ink);cursor:pointer;border-radius:99px;text-align:left}
-.gr__tabs [aria-selected=true]{color:#fff}
+.gr__tabs button{transition:background .25s,color .25s}.gr__tabs [aria-selected=true]{background:var(--ink);color:#fff}
 .gr__panel{background:#fff;border-radius:var(--r);padding:clamp(24px,3.4vw,46px);min-height:260px;box-shadow:0 34px 60px -44px rgba(28,43,75,.5)}
 .gr__n{font:800 clamp(52px,8vw,96px)/1 var(--ff-d);color:var(--red);letter-spacing:-.05em;display:block;margin-bottom:12px}
 .gr__panel h3{font-size:clamp(22px,2.6vw,30px);margin-bottom:12px}
